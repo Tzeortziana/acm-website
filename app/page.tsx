@@ -30,11 +30,12 @@ const team: TeamMember[] = [
 
 export default function Home() {
   return (
+    
     <main className="min-h-screen bg-gray-50 text-gray-800">
 
-      <section className="bg-blue-600 text-white py-24 px-4 text-center">
-        <h1 className="text-5xl font-extrabold mb-4">ACM Student Chapter</h1>
-        <p className="text-xl opacity-90">
+      <section className="bg-blue-600 text-white py-16 px-4 md:py-32 text-center transition-all">
+        <h1 className="text-3xl md:text-6xl font-extrabold mb-4">ACM Student Chapter</h1>
+        <p className="text-lg md:text-xl opacity-90 mx-auto">
           ....
         </p>
       </section>
