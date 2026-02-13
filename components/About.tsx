@@ -1,5 +1,4 @@
 
-
 export default function About(){
     return(
         <section id="about" className="py-16 px-8 max-w-4xl mx-auto text-center">

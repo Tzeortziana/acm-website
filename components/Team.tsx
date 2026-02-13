@@ -4,8 +4,6 @@ interface TeamMember {
   linkedin: string;
 }
 
-
-
 const team: TeamMember[] = [
   { name: "Tzeortziana Komoritsan", role: "Admin", linkedin: "link" },
   { name: "Christina", role: "nothing", linkedin: "" },
