@@ -1,10 +1,85 @@
+// components/Footer.tsx
 
-export default function Footer(){
-    return (
-        <section id="contact" className="bg-gray-900 text-white py-12 text-center">
-        <h2 className="text-2xl font-bold mb-4">Contanct us</h2>
-        <p className="text-gray-400 mb-2">Any questions? Part of the team?</p>
-        <p className="font-semibold text-blue-400">Email: acm@csd.uoc.gr</p>
-      </section>
-    );
+export default function Footer() {
+  return (
+    <footer id="contact" className="bg-slate-950 text-white pt-12 pb-8 border-t border-slate-900">
+      <div className="max-w-[95%] mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+          {/* Column 1 - branding */}
+          <div className="space-y-5">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-blue-600/20">
+                A
+              </div>
+              <span className="font-bold text-2xl tracking-tighter">
+                ACM <span className="text-blue-500">Student</span>
+              </span>
+            </div>
+            <p className="text-slate-400 text-base leading-relaxed max-w-sm">
+              Official Student at CSD UOC. Bridging the gap between theory and practice.
+            </p>
+          </div>
+
+          {/* Column 2 - links */}
+          <div>
+            <h4 className="font-bold text-lg mb-5 text-slate-100">Quick Links</h4>
+            <ul className="space-y-3 text-slate-400 text-base">
+              <li><a href="#about" className="hover:text-blue-500 transition-colors">About Us</a></li>
+              <li><a href="#events" className="hover:text-blue-500 transition-colors">Events</a></li>
+              <li><a href="#team" className="hover:text-blue-500 transition-colors">Our Team</a></li>
+            </ul>
+          </div>
+
+          {/* Column 3 - social */}
+          <div>
+            <h4 className="font-bold text-lg mb-5 text-slate-100">Connect</h4>
+            <div className="flex space-x-4">
+              <a href="#" className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center hover:bg-blue-600 transition-all group shadow-md">
+                <svg className="w-6 h-6 fill-slate-400 group-hover:fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.849-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849s.012-3.584.07-4.849c.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.058-1.281.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
+              </a>
+              <a href="#" className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center hover:bg-blue-600 transition-all group shadow-md">
+                <svg className="w-6 h-6 fill-slate-400 group-hover:fill-white" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+              </a>
+            </div>
+          </div>
+
+          {/* Column 4 - contact */}
+          <div>
+            <h4 className="font-bold text-lg mb-5 text-slate-100">Contact Us</h4>
+            <a href="mailto:acm@csd.uoc.gr" className="text-blue-400 text-lg font-bold hover:text-blue-300 transition-colors">
+              acm@csd.uoc.gr
+            </a>
+            <p className="text-slate-500 text-xs mt-3 uppercase tracking-widest font-mono">Department of Computer Science</p>
+          </div>
+        </div>
+
+        {/* Sub-footer */}
+        <div className="pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-slate-500 text-sm">
+            © 2026 ACM Student Chapter UOC. All rights reserved.
+          </p>
+          {/* University Section */}
+          <div className="flex items-center gap-5 group cursor-pointer">
+            <div className="text-right hidden sm:block">
+              <p className="text-[12px] font-bold uppercase tracking-[0.2em] text-slate-400 group-hover:text-blue-500 transition-colors">
+                University of Crete
+              </p>
+              <p className="text-[10px] text-slate-600 font-medium">Department of Computer Science</p>
+            </div>
+
+            {/* Logo Container */}
+            <div className="relative w-14 h-14 flex items-center justify-center">
+              <div className="absolute inset-0 bg-blue-500/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <img
+                src="/uoclogo.png"
+                alt="University of Crete Seal"
+                className="relative w-full h-full object-contain opacity-80 brightness-200 grayscale group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }

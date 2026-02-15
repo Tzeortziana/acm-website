@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/*ROTATE FILP*/
+@keyframes super-flip {
+  0%, 10% { 
+    transform: rotateY(0deg); 
+    text-shadow: 0 0 0px transparent;
+  }
+  40%, 60% { 
+    transform: rotateY(180deg); 
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+    color: #60a5fa;
+  }
+  90%, 100% { 
+    transform: rotateY(360deg); 
+    text-shadow: 0 0 0px transparent;
+  }
+}
+
+.animate-auto-flip {
+  display: inline-block;
+  animation: super-flip 6s infinite ease-in-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}

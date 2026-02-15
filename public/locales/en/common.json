@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "events": "Events",
+    "team": "Team",
+    "join": "Join Us"
+  },
+  "hero": {
+    "title": "Level Up Your",
+    "subtitle": "Coding Journey",
+    "description": "Join the official ACM Student Chapter. We don't just code; we build the future.",
+    "cta_events": "Explore Events →",
+    "cta_join": "Join the Team"
+  },
+  "about": {
+    "badge": "Discovery",
+    "title": "Who We Are",
+    "description": "We are the official ACM Student Chapter of our university. Our mission is to bridge the gap between theory and practice.",
+    "pillars": {
+      "workshops": { "title": "Workshops", "desc": "Hands-on experience with the latest technologies and tools." },
+      "networking": { "title": "Networking", "desc": "Connect with fellow students and industry professionals." },
+      "hackathons": { "title": "Hackathons", "desc": "Build innovative projects and solve challenges in teams." }
+    }
+  },
+  "events": {
+    "badge": "Timeline",
+    "title": "Upcoming Events",
+    "joined": "joined",
+    "details": "View Details"
+  },
+  "team": {
+    "badge": "Our Leadership",
+    "title": "The People Behind ACM Student",
+    "description": "Our team consists of dedicated students and advisors working together to foster a strong computing community."
+  }
+}

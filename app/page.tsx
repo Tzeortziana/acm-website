@@ -1,14 +1,21 @@
 // app/page.tsx
-import Navbar from "@/components/Navbar";
+"use client";
+import dynamic from 'next/dynamic';
 import Events from "@/components/Events";
 import Team from "@/components/Team";
 import Footer from "@/components/Footer";
-import About from "@/components/About";
-import Hero from "@/components/Hero";
 
 
-import Image from "next/image";
 
+const Navbar = dynamic(() => import('@/components/Navbar'), { 
+  ssr: false 
+});
+const Hero = dynamic(() => import('@/components/Hero'), { 
+  ssr: false 
+});
+const About = dynamic(() => import('@/components/About'), { 
+  ssr: false 
+});
 
 
 export default function Home() {
