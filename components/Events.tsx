@@ -1,4 +1,7 @@
 // components/Events.tsx
+"use client";
+import { useTranslation } from 'react-i18next';
+
 
 interface Event {
   id: number;
@@ -14,6 +17,9 @@ const events: Event[] = [
 ];
 
 export default function Events() {
+
+  const { t, i18n } = useTranslation('common');
+
   return (
     <section id="events" className="py-24 bg-white scroll-mt-16">
       <div className="max-w-[95%] mx-auto px-6">
@@ -23,9 +29,9 @@ export default function Events() {
           {/* ΑΡΙΣΤΕΡΑ: Δυναμική Λίστα Events από το Array σου */}
           <div className="lg:w-1/2">
             <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3 underline decoration-2 underline-offset-8">
-              Timeline
+              {t('events.badge')}
             </h2>
-            <h3 className="text-4xl font-black text-slate-900 mb-10">Upcoming Events</h3>
+            <h3 className="text-4xl font-black text-slate-900 mb-10">{t('events.title')}</h3>
 
             <div className="space-y-6">
               {events.map((event) => (

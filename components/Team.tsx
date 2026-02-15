@@ -1,31 +1,36 @@
 // components/Team.tsx
 
+"use client";
+import { useTranslation } from 'react-i18next';
+
 interface TeamMember {
   name: string;
-  role: string;
+  roleKey: string;
   linkedin?: string;
 }
 
 const team: TeamMember[] = [
-  { name: "Nikos Kanakousakis", role: "Admin", linkedin: "https://linkedin.com" },
-  { name: "Kvstas Anagnostakis", role: "Web Developer", linkedin: "https://linkedin.com" },
-  { name: "Tzeortziana Komoritsan", role: "Web Developer", linkedin: "https://linkedin.com" },
-  { name: "Pavlos Grigoriadis", role: "Advisor", linkedin: "https://linkedin.com" },
-  { name: "Christina Papachristoudi", role: "Advisor", linkedin: "https://linkedin.com" },
+  { name: "Nikos Kanakousakis", roleKey: "admin", linkedin: "https://linkedin.com" },
+  { name: "Kostas Anagnostakis", roleKey: "web_dev", linkedin: "https://linkedin.com" },
+  { name: "Tzeortziana Komoritsan", roleKey: "web_dev", linkedin: "https://linkedin.com" },
+  { name: "Pavlos Grigoriadis", roleKey: "advisor", linkedin: "https://linkedin.com" },
+  { name: "Christina Papachristoudi", roleKey: "advisor", linkedin: "https://linkedin.com" },
 ];
 
 export default function Team() {
+
+  const { t } = useTranslation('common');
+
   return (
     <section id="team" className="py-24 bg-white scroll-mt-16">
       <div className="max-w-6xl mx-auto px-6 text-center">
         
         {/* Header Section */}
         <div className="mb-16">
-          <h2 className="text-blue-600 font-bold tracking-[0.2em] uppercase text-sm mb-4">Our Leadership</h2>
-          <h3 className="text-4xl md:text-4xl font-black text-slate-900 mb-6">The People Behind ACM Student</h3>
+          <h2 className="text-blue-600 font-bold tracking-[0.2em] uppercase text-sm mb-4">{t('team.badge')}</h2>
+          <h3 className="text-4xl md:text-4xl font-black text-slate-900 mb-6">{t('team.title')}</h3>
           <p className="text-slate-500 max-w-1xl mx-auto text-lg leading-relaxed">
-            Our team consists of dedicated students and advisors working together to foster a 
-            strong computing community through innovation and collaboration.
+            {t('team.description')}
           </p>
         </div>
 
@@ -54,7 +59,7 @@ export default function Team() {
                   {member.name}
                 </h4>
                 <p className="text-blue-600 font-semibold text-sm uppercase tracking-wider">
-                  {member.role}
+                  {t(`team.roles.${member.roleKey}`)}
                 </p>
                 
                 {/* LinkedIn Icon/Link */}
