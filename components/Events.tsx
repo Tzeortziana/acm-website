@@ -26,7 +26,7 @@ export default function Events() {
 
         <div className="flex flex-col lg:flex-row gap-16">
 
-          {/* ΑΡΙΣΤΕΡΑ: Δυναμική Λίστα Events από το Array σου */}
+          {/*  */}
           <div className="lg:w-1/2">
             <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3 underline decoration-2 underline-offset-8">
               {t('events.badge')}
@@ -39,7 +39,7 @@ export default function Events() {
                   key={event.id}
                   className="group flex items-start p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:border-blue-200 transition-all hover:shadow-xl hover:-translate-y-1"
                 >
-                  {/* Ημερομηνία ως Badge */}
+                  {/*  Badge */}
                   <div className="flex-shrink-0 w-20 h-20 bg-slate-900 text-white rounded-2xl flex flex-col items-center justify-center font-bold shadow-lg group-hover:bg-blue-600 transition-colors">
                     <span className="text-sm uppercase opacity-80">{event.date.split(' ')[0].substring(0, 3)}</span>
                     <span className="text-2xl">{event.date.split(' ')[1]}</span>
@@ -68,7 +68,7 @@ export default function Events() {
             </div>
           </div>
 
-          {/* ΔΕΞΙΑ: Google Calendar με το "Terminal" στυλ */}
+          {/* right: Google Calendar  */}
           <div className="lg:w-1/2">
             <div className="sticky top-24 bg-slate-900 p-4 rounded-3xl shadow-2xl border border-slate-800">
               {/* Window Controls "Hacker" Terminal */}

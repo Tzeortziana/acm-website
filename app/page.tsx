@@ -2,6 +2,7 @@
 import dynamic from 'next/dynamic';
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from 'react-i18next'; 
+import { useEffect, useState } from 'react';
 
 const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: false });
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: false });
@@ -13,8 +14,17 @@ const Footer = dynamic(() => import('@/components/Footer'), { ssr: false });
 export default function Home() {
   const { i18n } = useTranslation(); 
 
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <>
+    <Navbar />
       
     {/*smooth effect translation*/}
       <AnimatePresence mode="wait">
@@ -26,7 +36,7 @@ export default function Home() {
           transition={{ duration: 0.2, ease: "easeInOut" }} // ---------> TO BE DISCUSSED
           className="min-h-screen bg-gray-50 text-gray-800"
         >
-          <Navbar />
+          
           <Hero />
           <About />
           <Events />
