@@ -51,7 +51,7 @@ export default function Navbar() {
         <>
             {/* main Navbar */}
             <nav className="sticky top-0 z-[60] bg-white/70 backdrop-blur-md border-b border-slate-200/50 shadow-sm w-full">
-                <div className="max-w-[95%] mx-auto px-4 h-20 flex items-center justify-between">
+                <div className="max-w-[95%] mx-auto px-4 h-12 flex items-center justify-between">
 
                     {/* Logo */}
                     <div className="flex items-center space-x-3 group cursor-pointer">

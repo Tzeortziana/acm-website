@@ -1,8 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Backgrounds */
+  --color-bg: #FAFAFA;
+  --color-surface: #F4F6F8;
+  --color-surface-raised: #EDF0F3;
+  --color-border: #DDE3EA;
+
+  /* Text */
+  --color-text: #1E2A38;
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #8A97A8;
+
+  /* Accents — used sparingly */
+  --color-accent: #4A7FA5;
+  --color-accent-hover: #3A6A8E;
+  --color-accent-tint: #C8DCF0;
+  --color-secondary: #5B9BAF;
+
+  /* Team colors */
+  --color-dev: #8B7EC8;
+  --color-cyber: #5E9E8A;
+  --color-acmw: #C47A8A;
 }
 
 @theme inline {
