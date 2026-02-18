@@ -10,6 +10,9 @@ const About = dynamic(() => import('@/components/About'), { ssr: false });
 const Events = dynamic(() => import('@/components/Events'), { ssr: false });
 const Team = dynamic(() => import('@/components/Team'), { ssr: false });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: false });
+import EventsSlider from'@/components/EventsSlider';
+import TeamsSection from'@/components/TeamsSection';
+
 
 export default function Home() {
   const { i18n } = useTranslation(); 
@@ -39,8 +42,8 @@ export default function Home() {
           
           <Hero />
           <About />
-          <Events />
-          <Team />
+          <EventsSlider/>
+          <TeamsSection />
           <Footer />
         </motion.main>
       </AnimatePresence>

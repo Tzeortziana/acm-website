@@ -14,21 +14,21 @@
         "cta_join": "Join the Team"
     },
     "about": {
-        "badge": "Discovery",
-        "title": "Who We Are",
-        "description": "We are the official ACM Student Chapter of University of Crete. Our mission is to bridge the gap between theory and practice.",
+        "badge": "Chapter",
+        "title": "An Open Tech Community",
+        "description": "The chapter’s aim is to encourage students to get involved in computer science, and create a team of people that are interested in exploring the broad field of computer science.",
         "pillars": {
-            "workshops": {
-                "title": "Workshops",
-                "desc": "Hands-on experience with the latest technologies and tools."
+            "chapter": {
+                "title": "ACM Student Chapter",
+                "desc": "Official student chapter of the ACM at the University of Crete, advancing computing as a science and profession."
             },
-            "networking": {
-                "title": "Networking",
-                "desc": "Connect with fellow students and industry professionals."
+            "history": {
+                "title": "Est. 2024",
+                "desc": "Built by students to foster a community of researchers, educators, and professionals."
             },
-            "hackathons": {
-                "title": "Hackathons",
-                "desc": "Build innovative projects and solve challenges in teams."
+            "events": {
+                "title": "Events",
+                "desc": "Organizing a variety of technical workshops, hackathons, and talks to bridge theory and practice."
             }
         }
     },
