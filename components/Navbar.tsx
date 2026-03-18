@@ -53,14 +53,26 @@ export default function Navbar() {
             <nav className="sticky top-0 z-[60] bg-white/70 backdrop-blur-md border-b border-slate-200/50 shadow-sm w-full">
                 <div className="max-w-[95%] mx-auto px-4 h-12 flex items-center justify-between">
 
-                    {/* Logo */}
+                    {/* Logo Section */}
                     <div className="flex items-center space-x-3 group cursor-pointer">
-                        <div className="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center font-bold text-white shadow-md transition-transform group-hover:scale-110">
-                            A
+                    
+                        <div className="w-12 h-12 flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-[5deg]">
+                            <img
+                                src="/logo.png" 
+                                alt="ACM UOC Logo"
+                                className="w-full h-full object-contain drop-shadow-sm"
+                            />
                         </div>
-                        <span className="font-bold text-xl tracking-tighter text-slate-900">
-                            ACM <span className="text-blue-600 font-black italic">Student</span>
-                        </span>
+
+                   
+                        <div className="flex flex-col justify-center">
+                            <span className="font-bold text-xl tracking-tighter text-slate-900 leading-none">
+                                ACM <span className="text-blue-600 font-black italic">UOC</span>
+                            </span>
+                            <span className="text-[10px] font-mono font-bold text-slate-400 tracking-widest uppercase">
+                                Student Chapter
+                            </span>
+                        </div>
                     </div>
 
                     {/* Desktop Links */}
@@ -83,12 +95,12 @@ export default function Navbar() {
                             );
                         })}
 
-                        <a
+                        {/*<a
                             href="#contact"
                             className="bg-blue-600 text-white px-7 py-2.5 rounded-xl text-sm font-bold hover:bg-slate-900 transition-all shadow-lg shadow-blue-600/20 active:scale-95 ml-4 uppercase tracking-wider"
                         >
                             Join Us
-                        </a>
+                        </a>*/}
                         {/* Language Switcher */}
                         <div className="flex items-center ml-4 border-l border-slate-200 pl-4 space-x-2">
                             <button
@@ -160,7 +172,7 @@ export default function Navbar() {
                         </div>
 
                         {/* Join Us Button */}
-                        <div className="pt-2">
+                        {/*<div className="pt-2">
                             <a
                                 href="#contact"
                                 onClick={() => setIsOpen(false)}
@@ -168,7 +180,7 @@ export default function Navbar() {
                             >
                                 Join the Team
                             </a>
-                        </div>
+                        </div>*/}
 
                         {/* Footer-info */}
                         <div className="pt-4 border-t border-slate-50">

@@ -1,0 +1,94 @@
+"use client";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
+export default function EventSlider() {
+    const { t } = useTranslation('common');
+
+    return (
+        <section id="events" className="py-24 bg-white relative overflow-hidden">
+            <div className="max-w-7xl mx-auto px-6">
+                
+                {/* Header */}
+                <div className="mb-16">
+                    <h2 className="text-blue-600 font-mono tracking-[0.4em] uppercase text-xs mb-3 font-bold">
+                        {t('events.badge')}
+                    </h2>
+                    <h3 className="text-4xl font-black text-slate-900 tracking-tighter uppercase leading-none">
+                        {t('events.title')}
+                    </h3>
+                    <div className="w-16 h-1.5 bg-blue-600 mt-6 rounded-full shadow-[0_2px_10px_rgba(37,99,235,0.3)]"></div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    {/* Featured Event Card */}
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="group bg-white rounded-[2.5rem] border border-slate-100 p-7 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden relative flex flex-col h-[480px]"
+                    >
+                        <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-50 rounded-full group-hover:bg-blue-100/60 blur-2xl transition-colors duration-500 pointer-events-none" />
+                        
+                        <div className='relative z-10 flex flex-col h-full'>
+                            <div className="relative aspect-video rounded-3xl overflow-hidden bg-slate-50 border border-slate-100/50 mb-6">
+                                <img src="/game.jpeg" alt="Game Dev" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                                <div className="absolute top-4 right-4 bg-blue-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">
+                                    {t('events.featured_event.status')}
+                                </div>
+                            </div>
+
+                            <div className="flex items-center gap-3 mb-3 text-blue-500 font-mono text-[10px] tracking-widest font-bold uppercase">
+                                <div className="w-1.5 h-1.5 rounded-full bg-blue-600 shadow-[0_0_5px_rgba(37,99,235,0.5)]" />
+                                <span>{t('events.featured_event.date_day')} {t('events.months.apr')} {t('events.featured_event.date_year')}</span>
+                            </div>
+
+                            <h4 className="text-xl font-bold text-slate-900 mb-3 tracking-tight leading-tight group-hover:text-blue-600 transition-colors">
+                                {t('events.featured_event.title')}
+                            </h4>
+
+                            <div className="w-8 h-1 bg-blue-600 mb-5 group-hover:w-16 transition-all duration-500 rounded-full" />
+                            
+                            <p className="text-slate-500 text-sm font-light leading-relaxed italic line-clamp-3 mb-6">
+                                "{t('events.featured_event.description')}"
+                            </p>
+
+                            <div className="mt-auto pt-5 border-t border-slate-50">
+                                <button className="text-[10px] font-black uppercase tracking-widest text-slate-900 group-hover:text-blue-600 transition-colors flex items-center gap-2">
+                                    {t('events.featured_event.cta')}
+                                </button>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* Stay Tuned Card */}
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="group bg-slate-50/50 rounded-[2.5rem] border border-dashed border-slate-200 p-7 transition-all duration-500 flex flex-col h-[480px] items-center justify-center text-center"
+                    >
+                        <div className="w-20 h-20 rounded-full bg-white shadow-sm flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-500">
+                            ✨
+                        </div>
+                        <h4 className="text-xl font-bold text-slate-400 mb-3 tracking-tight uppercase">
+                            {t('events.stay_tuned.title')}
+                        </h4>
+                        <p className="text-slate-400 text-sm font-light italic max-w-[200px]">
+                            {t('events.stay_tuned.description')}
+                        </p>
+                        <div className="mt-8 flex gap-2">
+                             <div className="w-2 h-2 rounded-full bg-blue-200 animate-pulse" />
+                             <div className="w-2 h-2 rounded-full bg-blue-200 animate-pulse delay-75" />
+                             <div className="w-2 h-2 rounded-full bg-blue-200 animate-pulse delay-150" />
+                        </div>
+                    </motion.div>
+
+                </div>
+            </div>
+        </section>
+    );
+}

@@ -10,8 +10,12 @@ const About = dynamic(() => import('@/components/About'), { ssr: false });
 const Events = dynamic(() => import('@/components/Events'), { ssr: false });
 const Team = dynamic(() => import('@/components/Team'), { ssr: false });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: false });
+
+const TeamsSection = dynamic(() => import('@/components/TeamsSection'), { ssr: false });
+const UpcomingEvents = dynamic(() => import('@/components/UpcomingEvents'), { ssr: false });
 import EventsSlider from'@/components/EventsSlider';
-import TeamsSection from'@/components/TeamsSection';
+
+
 
 
 export default function Home() {
@@ -42,7 +46,7 @@ export default function Home() {
           
           <Hero />
           <About />
-          <EventsSlider/>
+          <UpcomingEvents/>
           <TeamsSection />
           <Footer />
         </motion.main>
