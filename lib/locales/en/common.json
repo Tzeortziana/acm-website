@@ -1,0 +1,216 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "events": "Events",
+        "team": "Teams",
+        "join": "Join Us"
+    },
+    "hero": {
+        "title": "Level Up Your",
+        "subtitle": "Coding Journey",
+        "description": "Join the official ACM Student Chapter. We don't just code; we build the future.",
+        "cta_events": "Explore Events →",
+        "cta_join": "Join the Team"
+    },
+    "about": {
+        "badge": "Chapter",
+        "title": "An Open Tech Community",
+        "description": "The chapter’s aim is to encourage students to get involved in computer science, and create a team of people that are interested in exploring the broad field of computer science.",
+        "pillars": {
+            "chapter": {
+                "title": "ACM Student Chapter",
+                "desc": "Official student chapter of the ACM at the University of Crete, advancing computing as a science and profession."
+            },
+            "history": {
+                "title": "Est. 2024",
+                "desc": "Built by students to foster a community of researchers, educators, and professionals."
+            },
+            "events": {
+                "title": "Events",
+                "desc": "Organizing a variety of technical workshops, hackathons, and talks to bridge theory and practice."
+            }
+        }
+    },
+    "team": {
+        "badge": "CSD Collaboration",
+        "title": "Our Specialist Teams",
+        "specialist_teams": {
+            "game_dev": {
+                "name": "Game Dev",
+                "tag": "CSD_UOC_GAME",
+                "description": "Our active lab focused on game mechanics and interactive storytelling."
+            },
+            "more_to_come": {
+                "name": "More to Come",
+                "tag": "STAY_TUNED",
+                "description": "New specialist teams are being formed. Machine Learning and Web labs are next."
+            }
+        }
+    },
+    "footer": {
+        "description": "Official Student at CSD UOC. Bridging the gap between theory and practice.",
+        "quick_links": "Quick Links",
+        "connect": "Follow us",
+        "contact_us": "Contact Us",
+        "rights": "All rights reserved.",
+        "university": "University of Crete",
+        "department": "Department of Computer Science"
+    },
+    "teams_page": {
+        "badge": "CSD Collaboration",
+        "title": "Our Specialist Teams",
+        "description": "The subgroups of ACM UOC Student Chapter aim to engage members in specialized fields of Computer Science. Under the guidance of experienced coordinators, the teams operate in a highly collaborative environment with the ultimate goal of acquiring and exchanging knowledge and experiences.",
+        "explore_cta": "Explore Team",
+        "teams": {
+            "game_dev": {
+                "name": "Game Development",
+                "icon": "🎮",
+                "description": "Are you into video games? Would you like to participate in the development of an electronic game? Then the Game Dev team is for you!"
+            },
+            "web_dev": {
+                "name": "Web Development",
+                "icon": "🌐",
+                "description": "Websites: a must for every business and organization. Learn to build modern, responsive, and robust web applications."
+            },
+            "machine_learning": {
+                "name": "Machine Learning",
+                "icon": "🤖",
+                "description": "Explore the basic concepts and trends of AI. We bring together everyone interested in machine learning and data science."
+            },
+            "security": {
+                "name": "Cyber Security",
+                "icon": "🛡️",
+                "description": "Interested in real-world hacking? Words like vulnerability research and penetration testing pique your curiosity? Join us."
+            },
+            "acmw": {
+                "name": "ACM-W",
+                "icon": "👩‍💻",
+                "description": "Promoting women's involvement in computing through mentorship events, workshops, and a supportive community."
+            }
+        }
+    },
+    "events": {
+        "badge": "Timeline",
+        "title": "Upcoming Events",
+        "view_details": "View Details",
+        "view_all": "View All Upcoming",
+        "upcoming_title": "All Upcoming Events",
+        "supported_by": "Supported By",
+        "stay_tuned": {
+            "title": "More to Come",
+            "description": "We are currently cooking new workshops and seminars."
+        },
+        "game-dev-workshop": {
+            "title": "Game Development Workshop",
+            "description": "A hands-on workshop introducing Unity and C# basics for building your first 3D world.",
+            "cta": "Register Now",
+            "status": "New"
+        },
+        "ai-symposium": {
+            "title": "AI Ethics & LLMs Symposium",
+            "description": "Exploring the boundaries of Large Language Models and the future of AI research.",
+            "cta": "Save a Spot",
+            "status": "Seminar"
+        },
+        "cybersecurity-ctf": {
+            "title": "Cybersecurity Capture The Flag",
+            "description": "Put your hacking skills to the test in our first competitive CTF event.",
+            "cta": "Enter CTF",
+            "status": "Competition"
+        },
+        "web-dev-hackathon": {
+            "title": "Next.js 24h Hackathon",
+            "description": "Build high-performance web apps in this intense 24-hour coding sprint.",
+            "cta": "Apply Now",
+            "status": "Hackathon"
+        }
+    },
+    "events_page": {
+        "badge": "Timeline",
+        "title": "Our Events",
+        "description": "Discover our upcoming sessions and explore the archive of past workshops, hackathons, and tech talks.",
+        "upcoming_title": "Upcoming Sessions",
+        "archive_badge": "Archive",
+        "archive_title": "Past Events",
+        "filter_all": "All Years",
+        "read_recap": "Read Recap",
+        "archive": {
+            "event_1": {
+                "title": "Intro to React Native",
+                "description": "A hands-on workshop where we built a cross-platform mobile app from scratch.",
+                "month": "OCT",
+                "day": "15"
+            },
+            "event_2": {
+                "title": "Cyber Security 101",
+                "description": "Exploring vulnerabilities and penetration testing basics with industry experts.",
+                "month": "SEP",
+                "day": "20"
+            },
+            "event_3": {
+                "title": "Game Jam 2024",
+                "description": "A marathon session where teams built complete indie games in one weekend.",
+                "month": "MAR",
+                "day": "05"
+            },
+            "event_4": {
+                "title": "Cloud Computing Day",
+                "description": "Deep dive into AWS and Vercel infrastructure for scaling applications.",
+                "month": "DEC",
+                "day": "10"
+            }
+        }
+    },
+    "event_detail": {
+        "back": "Back to Events",
+        "location_placeholder": "CSD, University of Crete",
+        "add_to_calendar": "Add to Calendar",
+        "view_on_maps": "View on Maps",
+        "upcoming_badge": "Upcoming Event",
+        "past_badge": "Past Event",
+        "agenda": "Agenda & Schedule",
+        "speakers": "Speakers & Mentors",
+        "sponsored_by": "Official Sponsors",
+        "join_prompt_title": "Join us at the event!",
+        "join_prompt_desc": "Don't forget to snap some photos and upload them here.",
+        "register_btn": "Register Now",
+        "recap_title": "Event Recap",
+        "gallery_title": "Photo Gallery",
+        "upload_photo": "Upload Photo"
+    },
+    "about_page": {
+        "badge": "Who We Are",
+        "title": "About ACM UOC",
+        "description": "We are a community of students passionate about Computer Science, dedicated to bridging the gap between academic theory and practical application.",
+        "mission_title": "Our Mission",
+        "mission_text": "By organizing workshops, hackathons, and technical seminars, we provide a collaborative environment where students can network, acquire modern skills, and explore the cutting-edge of technology.",
+        "vision_title": "Our Vision",
+        "vision_text": "We envision a vibrant student ecosystem where knowledge is freely shared. Whether you are writing your first line of code or you are an advanced developer, our chapter is here to support your journey and help you thrive in the tech industry."
+    },
+    "team-members": {
+        "badge": "Leadership",
+        "title": "Meet The Team",
+        "description": "The dedicated students and faculty advisors behind the ACM UOC Student Chapter.",
+        "roles": {
+            "admin": "Chair / Admin",
+            "web_dev": "Web Developer",
+            "advisor": "Faculty Advisor"
+        }
+    },
+    "join": {
+        "button": "Join Us",
+        "title": "Become a Member",
+        "subtitle": "Join the largest student tech community at UOC.",
+        "why_title": "Why Join ACM?",
+        "perk_1": "Access to exclusive workshops and tech talks.",
+        "perk_2": "Participate in hackathons and coding sprints.",
+        "perk_3": "Network with industry professionals and alumni.",
+        "form_title": "Application Form",
+        "name": "Full Name",
+        "email": "University Email",
+        "year": "Year of Study",
+        "interests": "Main Interests (e.g., AI, Web, Cyber)",
+        "submit": "Submit Application"
+    }
+}
