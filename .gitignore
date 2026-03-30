@@ -14,7 +14,7 @@
 /coverage
 
 # next.js
-/.next/
+/.next/**
 /out/
 
 # production
@@ -42,4 +42,5 @@ next-env.d.ts
 
 
 standalone.zip
-public/
+
+.vscode/**
