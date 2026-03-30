@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/_global-error": {
       "experimentalBypassFor": [
         {
@@ -122,30 +146,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/teams": {
       "experimentalBypassFor": [
         {
@@ -174,8 +174,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "d1be2f74716c8a7afabcaaac9dadc97b",
-    "previewModeSigningKey": "b524f833d2a6e5db2315edac38443d0a2530bf9562a6888ffc9c0e3366f2acb4",
-    "previewModeEncryptionKey": "f673f38d2c26e6bb711ef8409c7d7417c2f29ce3424fde28ef5f3bdad1889e2d"
+    "previewModeId": "d091f9829e119a47cca564aba19c544a",
+    "previewModeSigningKey": "8a4402cb066f807f7beff559badc54451501044abf15c5fce636eb2b30109894",
+    "previewModeEncryptionKey": "f5ea42611ffdb850d7c2555c78aeb20a70a2318335fe13902dc60defd9298b73"
   }
 }
